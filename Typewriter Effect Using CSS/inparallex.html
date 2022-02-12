@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Typewriter Effect</title>
+      <link rel="stylesheet" href="style.css">
+
+      <style>
+            .textHolder {
+                  margin: 10rem auto;
+                  width: 80%;
+                  border: 1px solid black;
+                  /* display: flex;
+                  justify-content: center;
+                  align-items: center; */
+                  flex-wrap: wrap;
+                  padding: 0rem;
+            }
+            .line {
+                  color: black;
+                  width: 16em;
+                  margin: 6rem auto;
+                  font-size: 5rem;
+                  text-align: left;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  padding: 0rem;
+            }
+
+            .anim-typewriter {
+                  animation: typewriter 3s steps(60) 1s 1 both;
+            }
+
+            @keyframes typewriter {
+                  0% {
+                        width: 0;
+                  }
+                  100% {
+                        width: 16em;
+                  }
+            }
+
+      </style>
+</head>
+<body>
+
+<div class="textHolder">
+      <p class="line anim-typewriter"> Hello! Thanks for stopping by:) </p>
+</div>
+
+
+</body>
+</html>

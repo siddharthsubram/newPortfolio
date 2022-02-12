@@ -1,0 +1,36 @@
+.imageHolder {
+      position: absolute;
+
+      width: 100%;
+
+      border-radius: 2rem;
+
+      background-size: cover;
+
+      background-blend-mode: screen;
+
+      outline-offset: 1rem;
+      transition: all 1s;
+      &__me {
+            position: relative;
+            height: 42rem;
+
+            background-image: linear-gradient(
+                        to right bottom,
+                        rgba($color--redPurple, 0.8),
+                        rgba($color--blueGreen, 0.7)
+                  ),
+                  url(../src/me-but-taller.jpg);
+
+            &:hover {
+                  transform: scale(1.03);
+                  background-image: linear-gradient(
+                              to right bottom,
+                              rgba($color--redPurple, 0),
+                              rgba($color--blueGreen, 0)
+                        ),
+                        url(../src/me-but-taller.jpg);
+                  outline: 1rem solid $color--redPurple;
+            }
+      }
+}

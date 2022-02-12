@@ -1,0 +1,100 @@
+.aboutMe__container {
+  margin: 0 auto;
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem;
+}
+
+.aboutMe__container__top {
+  padding: 1rem;
+  font-size: 3rem;
+  text-align: left;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.aboutMe__container__top__text {
+  /*
+                        flex: 1;
+                        flex
+                        border: 1px solid black;
+                        border-radius: 3rem;
+                        padding: 3rem;*/
+  width: 16em;
+  font-size: 5rem;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-animation: typewriter 2s steps(60) 1s 1 both;
+          animation: typewriter 2s steps(60) 1s 1 both;
+}
+
+.aboutMe__container__middle {
+  border-top: 2px solid;
+  margin-top: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+.aboutMe__container__middle__left {
+  padding: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 70%;
+          flex: 1 1 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutMe__container__middle__left__textMain {
+  font-size: 3rem;
+  margin: 2rem;
+  margin-left: 0rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid red;
+}
+
+.aboutMe__container__middle__left__textSub {
+  font-size: 2rem;
+  margin: 2rem;
+  margin-left: 1.5rem;
+}
+
+.aboutMe__container__middle__right {
+  border-radius: 2rem;
+  position: center;
+  margin-left: 2rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  padding: 1rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+}
+
+.aboutMe__container__bot {
+  padding: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.aboutMe__container__bot__quote {
+  border-radius: 3rem;
+  font-size: 3rem;
+  text-align: center;
+}

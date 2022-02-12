@@ -1,0 +1,125 @@
+.landing {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+  height: 100vh;
+  font-family: "Open Sans", sans-serif;
+}
+
+.landing__hero {
+  height: 98vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.landing__hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid black;
+  padding: 0.5rem;
+  height: 90vh;
+  width: 70%;
+  margin: 3rem auto;
+}
+
+.landing__hero__container__title {
+  justify-self: flex-start;
+  font-family: "Delius", cursive;
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 4rem;
+  padding-left: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.25rem;
+  width: 70%;
+  text-align: left;
+}
+
+.landing__hero__container__title--firstName {
+  padding-right: 1rem;
+}
+
+.landing__hero__container__quote {
+  width: 70%;
+  margin-top: 2rem;
+  font-family: "Kalam", cursive;
+  border: 1px solid black;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.landing__hero__container__jobList {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border: 1px solid black;
+  padding: 1rem;
+  font-size: 1.5rem;
+  list-style: none;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60%;
+  font-weight: 500;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.landing__hero__container__jobList__element {
+  margin-top: 1rem;
+}
+
+.landing__hero__container__links {
+  border: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0.5rem;
+  list-style: none;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 60%;
+}
+
+.landing__hero__container__links--item {
+  font-size: 1.5rem;
+  list-style: none;
+  text-align: center;
+  width: 15vw;
+  border: 1px solid black;
+  border-radius: 3rem;
+  margin: 1rem;
+  padding: 0.5rem;
+}

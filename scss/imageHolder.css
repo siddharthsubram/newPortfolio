@@ -1,0 +1,17 @@
+.imageHolder {
+  width: 100%;
+  border-radius: 2rem;
+  position: center;
+  background-size: cover;
+  height: 45rem;
+  background-blend-mode: screen;
+  background-position: center;
+  outline-offset: 1rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.imageHolder__me {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(128, 128, 128, 0.8)), to(rgba(128, 128, 128, 0.6))), url(../src/me-but-taller.jpg);
+  background-image: linear-gradient(to right bottom, rgba(128, 128, 128, 0.8), rgba(128, 128, 128, 0.6)), url(../src/me-but-taller.jpg);
+}

@@ -8,6 +8,31 @@ body {
           box-sizing: border-box;
 }
 
+.filter-green {
+  -webkit-filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+          filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
+
+.filter-fadedGreen {
+  -webkit-filter: invert(57%) sepia(23%) saturate(1548%) hue-rotate(81deg) brightness(96%) contrast(80%);
+          filter: invert(57%) sepia(23%) saturate(1548%) hue-rotate(81deg) brightness(96%) contrast(80%);
+}
+
+.filter-redPurple {
+  -webkit-filter: invert(23%) sepia(20%) saturate(4335%) hue-rotate(310deg) brightness(93%) contrast(90%);
+          filter: invert(23%) sepia(20%) saturate(4335%) hue-rotate(310deg) brightness(93%) contrast(90%);
+}
+
+.filter-blueGreen {
+  -webkit-filter: invert(36%) sepia(87%) saturate(388%) hue-rotate(124deg) brightness(93%) contrast(93%);
+          filter: invert(36%) sepia(87%) saturate(388%) hue-rotate(124deg) brightness(93%) contrast(93%);
+}
+
+.filter-yellowOrange {
+  -webkit-filter: invert(67%) sepia(15%) saturate(5188%) hue-rotate(340deg) brightness(97%) contrast(92%);
+          filter: invert(67%) sepia(15%) saturate(5188%) hue-rotate(340deg) brightness(97%) contrast(92%);
+}
+
 @-webkit-keyframes typewriter {
   0% {
     width: 0;

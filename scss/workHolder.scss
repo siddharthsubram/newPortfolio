@@ -1,0 +1,116 @@
+.workHolder {
+      display: flex;
+      flex-direction: column;
+      //height: 5rem;
+      //padding: 1rem;
+      width: 60%;
+      justify-content: center;
+      align-items: center;
+      background-color: none;
+      //border: 1px solid black;
+      @media (max-width: 1300px) {
+            width: 75%;
+      }
+
+      @media (max-width: 1000px) {
+            width: 90%;
+      }
+
+      @media (max-width: 700px) {
+            width: 95%;
+      }
+
+      &:hover {
+            & > .workHolder__title {
+                  color: black;
+                  font-weight: 1000;
+                  letter-spacing: 0.03rem;
+                  font-size: 1.58rem;
+            }
+      }
+
+      &__title {
+            font-size: 1.5rem;
+            color: rgb(95, 95, 95);
+            font-weight: 700;
+            //text-transform: uppercase;
+            letter-spacing: 0.02rem;
+
+            transition: all 0.5s;
+            padding-bottom: 0.3rem;
+      }
+
+      &__content {
+            height: 45rem;
+            width: 100%;
+
+            position: relative;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: none;
+            border-radius: 2rem;
+            transition: all 0.5s linear;
+            cursor: pointer;
+            overflow: hidden;
+            background-size: cover;
+
+            @media (max-width: 1300px) {
+                  height: 40rem;
+            }
+            @media (max-width: 1000px) {
+                  height: 35rem;
+            }
+            @media (max-width: 700px) {
+                  height: 25rem;
+            }
+
+            @media (max-width: 400px) {
+                  height: 15rem;
+            }
+
+            &:hover {
+                  background-color: rgba(100, 100, 100, 0.8);
+                  & > .workHolder__content__text {
+                        opacity: 1;
+                        transform: translateY(-1rem);
+                  }
+            }
+            &__video {
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  z-index: -1;
+                  min-width: 100%;
+                  min-height: 100%;
+                  background-size: cover;
+
+                  // @media (max-width: 1300px) {
+                  //       height: 40rem;
+                  // }
+                  // @media (max-width: 1000px) {
+                  //       height: 35rem;
+                  //       transform: scale(0.7);
+                  // }
+                  // @media (max-width: 700px) {
+                  //       height: 25rem;
+                  //       transform: scale(0.6);
+                  // }
+
+                  // @media (max-width: 400px) {
+                  //       height: 15rem;
+                  //       transform: scale(0.5);
+                  // }
+            }
+            &__text {
+                  transition: all 0.2s linear;
+                  color: white;
+                  font-size: 5rem;
+                  transform: translateY(2rem);
+                  opacity: 0;
+            }
+      }
+}

@@ -1,6 +1,7 @@
 .aboutMe {
-      //border: 1px solid blue;
-
+      //@at-root: 1px solid blue;
+      background-color: rgb(238, 238, 238);
+      height: 100vh;
       &__container {
             margin: 0 auto;
             width: 70%;
@@ -11,6 +12,7 @@
             //border: 1px solid black;
             &__top {
                   //border: 1px solid black;
+                  margin-top: 8rem;
                   padding: 1rem;
                   font-size: 3rem;
                   text-align: left;
@@ -122,14 +124,15 @@
                         flex: 0 0 25%;
 
                         @media (max-width: 1100px) {
-                              padding:0rem;
-                              margin:0rem;
+                              padding: 0rem;
+                              margin: 0rem;
                         }
                   }
             }
             &__bot {
                   //border: 1px solid black;
-                  font-family: "Kalam", cursive;
+                  //font-family: "Kalam", cursive;
+                  font-family: "Open Sans", sans-serif;
                   //padding: 0.5rem;
                   flex: 1;
                   &__quote {

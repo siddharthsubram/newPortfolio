@@ -1,3 +1,21 @@
+.solo {
+      width: 15rem !important;
+}
+
+.redButton {
+      width: 20%;
+      font-size: 2rem;
+      text-align: center;
+      color: $color--redPurple;
+      border: 1px solid $color--redPurple;
+      transition: all 0.5s;
+
+      &:hover {
+            width: 21%;
+            color: white;
+      }
+}
+
 .landing {
       //box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
       display: flex;
@@ -7,7 +25,7 @@
 
       margin-bottom: 10rem;
       &__hero {
-            border: 1px solid red;
+            //border: 1px solid red;
             height: 100vh;
             width: 100%;
 
@@ -35,7 +53,7 @@
                   flex-direction: column;
                   align-items: center;
 
-                  border: 1px solid black;
+                  //border: 1px solid black;
                   padding: 0.5rem;
                   height: 90vh;
                   width: 70%;
@@ -43,32 +61,37 @@
 
                   &__title {
                         justify-self: flex-start;
-                        font-family: "Delius", cursive;
+                        font-family: "Open Sans", sans-serif;
                         //border: 1px solid black;
                         display: flex;
                         flex-direction: row;
-                        font-size: 4rem;
+                        font-size: 3rem;
                         padding-left: 2rem;
                         font-weight: 700;
                         letter-spacing: 0.5rem;
                         width: 70%;
                         text-align: left;
                         margin-left: 1rem;
+                        text-transform: uppercase;
+                        text-align: center;
+                        padding-left: 5rem;
+                        padding-top: 2rem;
                         &--firstName {
                               padding-right: 1rem;
                         }
                   }
 
                   &__quote {
-                        width: 70%;
+                        width: 80%;
                         margin-top: 2rem;
-                        font-family: "Kalam", cursive;
+                        font-family: "Open Sans", sans-serif;
                         //border: 1px solid black;
-                        padding-top: 2rem;
-                        font-size: 2rem;
+                        padding-top: 0.5rem;
+                        font-size: 1.75rem;
                         text-align: center;
+                        text-transform: uppercase;
                         &--1 {
-                              font-size: 2.2rem;
+                              font-size: 2rem;
                               color: $color--blueGreen;
                               transition: all 0.5s;
                               padding: 0rem;
@@ -80,7 +103,7 @@
                               }
                         }
                         &--2 {
-                              font-size: 2.2rem;
+                              font-size: 2rem;
                               color: $color--redPurple;
                               transition: all 0.5s;
                               padding: 0rem;
@@ -91,7 +114,7 @@
                               }
                         }
                         &--3 {
-                              font-size: 2.2rem;
+                              font-size: 2rem;
                               color: $color--yellowOrange;
                               transition: all 0.5s;
                               padding: 0rem;
@@ -103,7 +126,7 @@
                               }
                         }
                         &--4 {
-                              font-size: 2.2rem;
+                              font-size: 2rem;
                               color: $color--fadedGreen;
                               transition: all 0.5s;
                               padding: 0rem;

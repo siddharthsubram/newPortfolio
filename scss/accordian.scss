@@ -1,12 +1,15 @@
 .accordian {
       font-family: "Open Sans", sans-serif;
-      margin: 4rem;
+
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
+      border: 1px solid black;
+      margin: 0 auto;
       margin-top: 5vh;
-      //border: 1px solid black;
+
       &--element {
             width: 70%;
             position: relative;
@@ -14,6 +17,18 @@
             margin-top: 1rem;
             margin-bottom: 1rem;
             transition: all 0.5s;
+
+            @media (max-width: 1300px) {
+                  width: 75%;
+            }
+
+            @media (max-width: 1000px) {
+                  width: 85%;
+            }
+
+            @media (max-width: 600px) {
+                  width: 95%;
+            }
 
             &:hover {
                   cursor: pointer;

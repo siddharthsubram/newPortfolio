@@ -1045,7 +1045,7 @@ body {
   cursor: pointer;
   overflow: hidden;
   background-size: cover;
-  height: 40rem;
+  height: 45rem;
 }
 
 @media (max-width: 1300px) {
@@ -1374,6 +1374,19 @@ body {
   -webkit-transition: all 1s;
   transition: all 1s;
   margin: 0 auto;
+  width: calc(min(100%, 15vw));
+}
+
+@media (max-width: 1000px) {
+  .imageHolder {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 1400px) {
+  .imageHolder {
+    outline-offset: 0.75rem;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -1415,11 +1428,23 @@ body {
   outline: 1rem solid #952e4b;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 1400px) {
+  .imageHolder__me:hover {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(149, 46, 75, 0)), to(rgba(21, 125, 114, 0))), url(../src/me-but-taller.jpg);
+    background-image: linear-gradient(to right bottom, rgba(149, 46, 75, 0), rgba(21, 125, 114, 0)), url(../src/me-but-taller.jpg);
+    outline: 0.5rem solid #952e4b;
+  }
+}
+
+@media (max-width: 1000px) {
   .imageHolder__me:hover {
     -webkit-transform: scale(1.02);
             transform: scale(1.02);
-    outline: 0.5rem solid #952e4b;
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(149, 46, 75, 0)), to(rgba(21, 125, 114, 0))), url(../src/me-but-taller.jpg);
+    background-image: linear-gradient(to right bottom, rgba(149, 46, 75, 0), rgba(21, 125, 114, 0)), url(../src/me-but-taller.jpg);
+    outline: 0.3rem solid #952e4b;
   }
 }
 

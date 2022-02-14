@@ -3,22 +3,39 @@
 
       width: 100%;
 
+      //border: 1px solid black;
+
       border-radius: 2rem;
-
       background-size: cover;
-
+      background-position: center center;
       background-blend-mode: screen;
-
+      padding-top: 5rem;
       outline-offset: 1rem;
       transition: all 1s;
+      margin: 0 auto;
+
+      @media (max-width: $tablet) {
+            width: 50%;
+            height: 20rem;
+      }
+
+      @media (max-width: $bigPhone) {
+            width: 60%;
+            height: 15rem;
+            padding: 0rem;
+      }
 
       @media (max-width: 500px) {
             outline-offset: 0.5rem;
             padding: 0rem;
+            height: 10rem;
       }
+
       &__me {
             position: relative;
-            height: 42rem;
+            height: calc(min(35rem, 10vh));
+            //max-width: 40%;
+            height: 25rem;
 
             background-image: linear-gradient(
                         to right bottom,
@@ -41,20 +58,20 @@
                         outline: 0.5rem solid $color--redPurple;
                   }
             }
-            @media (max-width: 1000px) {
-                  height: 30rem;
-            }
+            // @media (max-width: 1000px) {
+            //       height: 30rem;
+            // }
 
-            @media (max-width: 500px) {
-                  outline-offset: 0.5rem;
-                  height: 20rem;
-                  padding: 0rem;
-            }
+            // @media (max-width: 500px) {
+            //       outline-offset: 0.5rem;
+            //       height: 20rem;
+            //       padding: 0rem;
+            // }
 
-            @media (max-width: 375px) {
-                  outline-offset: 0.5rem;
-                  height: 15rem;
-                  padding: 0rem;
-            }
+            // @media (max-width: 375px) {
+            //       outline-offset: 0.5rem;
+            //       height: 15rem;
+            //       padding: 0rem;
+            // }
       }
 }

@@ -38,7 +38,7 @@ body {
 //colors:
 
 //greys;
-$color--lightGrey: #f5f3f3;
+$color--lightGrey: #ffffff;
 
 //redPurples
 $color--redPurple: #952e4b;
@@ -61,9 +61,13 @@ $color--fadedGreen--light: rgb(87, 22, 22);
 
       100% {
             //Goes as far as the size of the object
-            width: 16em;
+            width: 15em;
       }
 }
 
 //breakpoints
-$bigPhone: 600px;
+$bigPhone: 650px;
+
+$tablet: 1000px;
+
+$laptop: 1400px;

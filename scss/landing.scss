@@ -4,15 +4,37 @@
 
 .redButton {
       width: 20%;
-      font-size: 2rem;
+      font-size: 1.5rem;
       text-align: center;
       color: $color--redPurple;
-      border: 1px solid $color--redPurple;
+      border: 2px solid $color--redPurple;
       transition: all 0.5s;
-
+      border-radius: 5rem;
+      padding: 0.5rem;
+      padding-bottom: 0.75rem;
+      text-transform: uppercase;
+      margin-bottom: 5rem;
+      cursor: pointer;
       &:hover {
+            font-size: 1.75rem;
+            letter-spacing: 0.1rem;
             width: 21%;
             color: white;
+            background-color: $color--redPurple;
+
+            transform: translateY(-1rem);
+      }
+
+      @media (max-width: $laptop) {
+            width: 30%;
+      }
+      @media (max-width: $tablet) {
+            font-size: 1.5rem;
+            width: 40%;
+      }
+      @media (max-width: $bigPhone) {
+            font-size: 1.25rem;
+            width: 50%;
       }
 }
 
@@ -39,7 +61,7 @@
                   position: absolute;
                   top: 0;
                   left: 0;
-                  width: 100%;
+                  width: 95%;
                   height: 100%;
                   object-fit: cover;
                   z-index: -1;
@@ -59,81 +81,121 @@
                   width: 70%;
                   margin: 3rem auto;
 
+                  @media (max-width: 1000px) {
+                        width: 80%;
+                  }
+
+                  @media (max-width: 650px) {
+                        width: 90%;
+                  }
                   &__title {
-                        justify-self: flex-start;
                         font-family: "Open Sans", sans-serif;
                         //border: 1px solid black;
-                        display: flex;
-                        flex-direction: row;
-                        font-size: 3rem;
-                        padding-left: 2rem;
-                        font-weight: 700;
-                        letter-spacing: 0.5rem;
-                        width: 70%;
-                        text-align: left;
-                        margin-left: 1rem;
+
+                        //font-size: 2rem;
+                        font-size: 2.5rem;
+                        //font-size: 35px;
+                        font-weight: 500;
+                        letter-spacing: 0.55rem;
+                        width: 100%;
                         text-transform: uppercase;
-                        text-align: center;
-                        padding-left: 5rem;
+
+                        margin: 0 auto;
+                        margin-left: -1rem;
                         padding-top: 2rem;
-                        &--firstName {
-                              padding-right: 1rem;
+                        text-align: center;
+                        @media (max-width: $tablet) {
+                              font-size: 2rem;
+                        }
+                        @media (max-width: $bigPhone) {
+                              font-size: 1.25rem;
                         }
                   }
 
                   &__quote {
-                        width: 80%;
+                        width: 95%;
                         margin-top: 2rem;
                         font-family: "Open Sans", sans-serif;
                         //border: 1px solid black;
                         padding-top: 0.5rem;
-                        font-size: 1.75rem;
+                        // font-size: 1.5rem;
+                        font-size: 1.5rem;
                         text-align: center;
                         text-transform: uppercase;
+                        margin-right: 0.75rem;
+                        @media (max-width: $tablet) {
+                              font-size: 1rem;
+                              padding: 1rem;
+                        }
                         &--1 {
-                              font-size: 2rem;
+                              font-size: clamp (10px, 30px, 50px);
                               color: $color--blueGreen;
                               transition: all 0.5s;
                               padding: 0rem;
 
                               &:hover {
-                                    font-size: 2.5rem;
+                                    font-size: 1.75rem;
                                     font-weight: 600;
                                     border-bottom: 1px solid $color--blueGreen;
                               }
+
+                              @media (max-width: $tablet) {
+                                    &:hover {
+                                          font-size: 1.25rem;
+                                    }
+                              }
                         }
                         &--2 {
-                              font-size: 2rem;
+                              //font-size: 1.5rem;
+
                               color: $color--redPurple;
                               transition: all 0.5s;
                               padding: 0rem;
                               &:hover {
-                                    font-size: 2.25rem;
+                                    font-size: 1.75rem;
                                     font-weight: 600;
                                     border-bottom: 1px solid $color--redPurple;
                               }
+
+                              @media (max-width: $tablet) {
+                                    &:hover {
+                                          font-size: 1.25rem;
+                                    }
+                              }
                         }
                         &--3 {
-                              font-size: 2rem;
+                              //font-size: 1.5rem;
+
                               color: $color--yellowOrange;
                               transition: all 0.5s;
                               padding: 0rem;
                               &:hover {
-                                    font-size: 2.25rem;
+                                    font-size: 1.75rem;
                                     font-weight: 600;
                                     border-bottom: 1px solid
                                           $color--yellowOrange;
                               }
+
+                              @media (max-width: $tablet) {
+                                    &:hover {
+                                          font-size: 1.25rem;
+                                    }
+                              }
                         }
                         &--4 {
-                              font-size: 2rem;
-                              color: $color--fadedGreen;
+                              color: $color--redPurple;
                               transition: all 0.5s;
                               padding: 0rem;
                               &:hover {
-                                    font-size: 2.25rem;
+                                    font-size: 1.75em;
                                     font-weight: 600;
                                     border-bottom: 1px solid $color--fadedGreen;
+                              }
+
+                              @media (max-width: $tablet) {
+                                    &:hover {
+                                          font-size: 1.25rem;
+                                    }
                               }
                         }
                   }
@@ -155,13 +217,25 @@
                         &__element {
                               margin-top: 1rem;
                               font-weight: 600;
-                              font-size: 2rem;
+                              font-size: 1.5rem;
+
+                              @media (max-width: $tablet) {
+                                    font-size: 1rem;
+                                    letter-spacing: 0.1rem;
+                              }
+
+                              @media (max-width: $bigPhone) {
+                                    font-size: 0.75rem;
+                                    letter-spacing: 0.1rem;
+                              }
+                              //font-size: clamp (10px, 30px, 50px);
                               &--UX {
                                     color: $color--blueGreen;
 
                                     transition: all 1s;
                                     &:hover {
-                                          font-size: 2.05rem;
+                                          //font-size: 2.05rem;
+                                          font-size: clamp (10px, 30px, 50px);
 
                                           letter-spacing: 0.3rem;
                                     }
@@ -172,8 +246,8 @@
 
                                     transition: all 1s;
                                     &:hover {
-                                          font-size: 2.05rem;
-
+                                          //font-size: 2.05rem;
+                                          font-size: clamp (10px, 30px, 50px);
                                           letter-spacing: 0.3rem;
                                     }
                               }
@@ -183,8 +257,8 @@
 
                                     transition: all 1s;
                                     &:hover {
-                                          font-size: 2.05rem;
-
+                                          //font-size: 2.05rem;
+                                          font-size: clamp (10px, 30px, 50px);
                                           letter-spacing: 0.3rem;
                                     }
                               }
@@ -208,7 +282,7 @@
                         &__item {
                               list-style: none;
                               text-align: center;
-
+                              font-size: 1.5rem;
                               text-transform: uppercase;
                               border-radius: 3rem;
                               margin: 1rem;
@@ -216,17 +290,21 @@
                               cursor: pointer;
 
                               @media (max-width: 750px) {
-                                    width: 100%;
+                                    font-size: 0.75rem;
+                                    width: 80%;
+                                    margin: 0.5rem;
                               }
                               &--resume {
                                     border: 2px solid $color--redPurple;
                                     color: $color--redPurple;
-                                    font-size: 1.5rem;
+                                    //font-size: 1.5rem;
+                                    //font-size: clamp (10px, 30px, 50px);
                                     //width: 15vw;
                                     transition: all 0.5s;
                                     flex: 1;
                                     &:hover {
-                                          font-size: 1.75rem;
+                                          //font-size: 1.75rem;
+                                          font-size: clamp (10px, 30px, 50px);
                                           letter-spacing: 0.1rem;
                                           color: white;
                                           background-color: $color--redPurple;
@@ -236,12 +314,14 @@
                               &--works {
                                     border: 2px solid $color--yellowOrange;
                                     color: $color--yellowOrange;
-                                    font-size: 1.5rem;
+                                    //font-size: 1.5rem;
+                                    //font-size: clamp (10px, 30px, 50px);
                                     //width: 15vw;
                                     transition: all 0.5s;
                                     flex: 1;
                                     &:hover {
-                                          font-size: 1.75rem;
+                                          //font-size: 1.75rem;
+                                          font-size: clamp (10px, 30px, 50px);
                                           letter-spacing: 0.1rem;
                                           color: white;
                                           background-color: $color--yellowOrange;
@@ -251,12 +331,14 @@
                               &--exp {
                                     border: 2px solid $color--blueGreen;
                                     color: $color--blueGreen;
-                                    font-size: 1.5rem;
+                                    //font-size: 1.5rem;
+                                    //font-size: clamp (10px, 30px, 50px);
                                     //width: 15vw;
                                     transition: all 0.5s;
                                     flex: 1;
                                     &:hover {
-                                          font-size: 1.75rem;
+                                          //font-size: 1.75rem;
+                                          font-size: clamp (10px, 30px, 50px);
                                           letter-spacing: 0.1rem;
                                           color: white;
                                           background-color: $color--blueGreen;

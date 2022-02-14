@@ -1,7 +1,7 @@
 .aboutMe {
-      //@at-root: 1px solid blue;
+      //border: 1px solid black;
       background-color: rgb(238, 238, 238);
-      height: 100vh;
+
       &__container {
             margin: 0 auto;
             width: 70%;
@@ -10,11 +10,21 @@
             //align-items: center;
             //padding: 1rem;
             //border: 1px solid black;
+            margin-bottom: 5rem;
+            @media (max-width: $laptop) {
+                  width: 75%;
+            }
+            @media (max-width: $tablet) {
+                  width: 80%;
+            }
+            @media (max-width: $bigPhone) {
+                  width: 95%;
+            }
+
             &__top {
                   //border: 1px solid black;
                   margin-top: 8rem;
                   padding: 1rem;
-                  font-size: 3rem;
                   text-align: left;
                   flex: 1;
 
@@ -22,21 +32,34 @@
                         // /*
                         // flex: 1;
                         // flex
-                        //border: 1px solid black;
+                        // border: 1px solid black;
                         // border-radius: 3rem;
                         // padding: 3rem;*/
-
-                        width: 16em;
-                        font-size: 5rem;
+                        font-family: "Roboto", sans-serif;
+                        opacity: 1;
+                        width: 15em;
+                        font-size: 3rem;
                         text-align: left;
                         white-space: nowrap;
                         overflow: hidden;
 
                         animation: typewriter 2s steps(60) 1s 1 both;
+                        @media (max-width: $laptop) {
+                              width: 10em;
+                              font-size: 2rem;
+                        }
+
+                        @media (max-width: $tablet) {
+                              width: 7.5em;
+                              font-size: 1.75rem;
+                        }
+                        @media (max-width: $bigPhone) {
+                              width: 2.25em;
+                              font-size: 1.2rem;
+                        }
                   }
             }
             &__middle {
-                  border-top: 5px solid $color--redPurple;
                   margin-top: 1rem;
                   display: flex;
                   flex-direction: row;
@@ -46,27 +69,37 @@
                   // border: 1px solid black;
                   margin-bottom: 2rem;
 
-                  @media (max-width: 900px) {
+                  @media (max-width: 1000px) {
                         flex-direction: column;
                   }
 
                   &__left {
-                        padding: 0.5rem;
+                        border-top: 5px solid $color--redPurple;
+                        //padding: 0.25rem;
                         //border: 1px solid black;
-                        flex: 1 1 70%;
+                        flex: 1 1 60%;
                         display: flex;
                         flex-direction: column;
 
                         &__textMain {
-                              font-size: 3rem;
+                              font-size: 2.25rem;
                               margin: 2rem;
                               margin-left: 0rem;
                               padding-bottom: 1rem;
                               border-bottom: 3px solid $color--yellowOrange;
+
+                              @media (max-width: $bigPhone) {
+                                    font-size: 1.5rem;
+                                    margin: 1.25rem;
+                              }
+                              @media (max-width: $tablet) {
+                                    font-size: 2rem;
+                                    margin: 1.75rem;
+                              }
                         }
 
                         &__textSub {
-                              font-size: 2rem;
+                              font-size: 1.5rem;
                               margin: 1rem;
                               margin-left: 1.5rem;
                               //border: 1px solid blue;
@@ -74,6 +107,15 @@
                                     padding-bottom: 2rem;
                                     border-bottom: 3px solid
                                           $color--yellowOrange;
+                              }
+
+                              @media (max-width: $bigPhone) {
+                                    font-size: 1rem;
+                                    margin: 0.5rem;
+                              }
+                              @media (max-width: $tablet) {
+                                    font-size: 1.25rem;
+                                    margin: 0.75rem;
                               }
                         }
 
@@ -87,7 +129,7 @@
                                     &:hover {
                                           font-weight: 500;
 
-                                          letter-spacing: 0.1rem;
+                                          letter-spacing: 1px;
                                     }
                               }
                               &__orange {
@@ -95,8 +137,8 @@
                                     transition: all 0.5s;
                                     font-weight: 700;
                                     &:hover {
-                                          letter-spacing: 0.2px;
-                                          font-size: 2.1rem;
+                                          letter-spacing: 1px;
+
                                           cursor: pointer;
                                     }
                               }
@@ -105,8 +147,7 @@
                                     color: $color--redPurple;
 
                                     &:hover {
-                                          letter-spacing: 0.2px;
-                                          font-size: 2.1rem;
+                                          letter-spacing: 1px;
                                     }
                               }
                         }
@@ -121,25 +162,12 @@
 
                         transition: all 1s;
                         padding: 1rem;
-                        flex: 0 0 25%;
+                        flex: 0 0 30%;
 
-                        @media (max-width: 1100px) {
+                        @media (max-width: 1200px) {
                               padding: 0rem;
                               margin: 0rem;
                         }
-                  }
-            }
-            &__bot {
-                  //border: 1px solid black;
-                  //font-family: "Kalam", cursive;
-                  font-family: "Open Sans", sans-serif;
-                  //padding: 0.5rem;
-                  flex: 1;
-                  &__quote {
-                        // border: 1px solid black;
-                        border-radius: 3rem;
-                        font-size: 2rem;
-                        text-align: center;
                   }
             }
       }

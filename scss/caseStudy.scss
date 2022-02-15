@@ -1,23 +1,3 @@
-.heroImage {
-      //width: calc(min(100%, 1000px));
-      //width: calc(min(100%, 2300px));
-      width: 100%;
-      margin: 0 auto;
-      //height: calc(min(80vh, 120rem));
-      //max-height: 100%;
-      //border: 1px solid black;
-      &__src {
-            background-position: center center;
-            //background-repeat: no-repeat;
-            max-width: 100%;
-
-            object-fit: cover;
-            @media (max-width: 600px) {
-                  object-fit: contain;
-            }
-      }
-}
-
 .page {
       background-color: #ffffff;
       margin: 0 auto;
@@ -40,6 +20,19 @@
       @media (max-width: $bigPhone) {
             width: 95%;
             padding: 0.25rem;
+      }
+
+      &__vid {
+            //border: 1px solid black;
+            //border-radius: 1rem;
+            width: 100%;
+            margin: 0 auto;
+            margin-bottom: 5rem;
+            &__src {
+                  border-radius: 2rem;
+                  max-width: 100%;
+                  background-size: cover;
+            }
       }
 
       &__back {
@@ -70,75 +63,79 @@
                   max-width: 100%;
                   object-fit: contain;
             }
+
+            &__second {
+                  margin-bottom: 5rem;
+            }
       }
 
-      &__title{
-            width:100%;
+      &__title {
+            width: 100%;
             text-align: center;
-            font-size:5rem;
-            text-transform:uppercase; 
-            margin: 0 auto; 
-            //border-bottom: 2.5px solid $SJSU--3; 
-            margin-top:2rem;
+            font-size: 5rem;
+            text-transform: uppercase;
+            margin: 0 auto;
+            //border-bottom: 2.5px solid $SJSU--3;
+            margin-top: 2rem;
             color: $SJSU--primary;
+
+            &__sub {
+                  font-size: 3rem;
+            }
       }
 
       &__overView {
             display: flex;
             flex-direction: column;
             color: $SJSU--primary;
-            //color: white;
+
             width: 100%;
 
-            // &__header {
-            //       border-top: 1px solid;
-            //       //background-color: $SJSU--primary;
-            //       width: 100%;
-            //       &__text {
-            //             margin: 0 auto;
-            //             border-bottom: 2.5px solid $SJSU--3;
-            //             width: 80%;
-            //             //color: white;
-            //             text-align: center;
-            //             font-size: 5rem;
-            //             text-transform: uppercase;
-            //       }
-            // }
-
+            & > * {
+                  margin-bottom: 5rem;
+            }
             &__teamMembers {
-                  width: 50%;
+                  width: 70%;
                   margin: 0 auto;
                   //border: 1px solid red;
                   display: flex;
-
+                  margin-top: 1rem;
                   flex-wrap: wrap;
 
                   justify-content: space-evenly;
-                  align-items: center;
-
+                  align-items: flex-start;
                   &__item {
                         display: flex;
                         flex-direction: column;
 
-                        padding: 0.5;
-                        max-width: 8rem;
+                        //padding: 0.5;
+                        max-width: 15rem;
                         //border: 1px solid red;
 
                         &__picture {
                               //border: 1px soild red;
-                              border-radius: 10rem;
+                              padding-left: 3rem;
+                              padding-right: 3rem;
 
                               &__src {
+                                    // border: 10px soild red;
+                                    // padding: 1rem;
+                                    // margin: 0 auto;
                                     border-radius: 10rem;
                                     max-width: 100%;
                                     object-fit: contain;
                                     background-position: center center;
+                                    margin: 0 auto;
                               }
                         }
                         &__roles {
                               //border: 1px solid red;
                               text-align: center;
                               list-style: none;
+                              &__name {
+                                    font-size: 1.5rem;
+                                    color: $SJSU--primary;
+                              }
                               &__elem {
                                     font-size: 1rem;
                               }
@@ -151,6 +148,7 @@
                   font-size: 2rem;
                   text-align: center;
                   margin: 0 auto;
+                  margin-top: 5rem;
                   //border-top: 2px solid $SJSU--2;
             }
       }
@@ -180,10 +178,10 @@
       &__proOver {
             display: flex;
             justify-content: space-evenly;
-            width: 100%;
-
+            width: 95%;
+            margin: 0 auto;
             &__left {
-                  margin-right: 2rem;
+                  //margin-right: 2rem;
                   //border: 1px solid red;
                   &__header {
                         margin-bottom: 1rem;
@@ -196,8 +194,8 @@
                   }
             }
             &__right {
-                  margin-left: 2rem;
-                  // border: 1px solid red;
+                  padding-left: 2rem;
+                  //border: 1px solid red;
                   &__header {
                         color: $SJSU--primary;
                         margin-bottom: 1rem;
@@ -206,21 +204,19 @@
                   }
 
                   &__text {
-                        color: black;
                         font-size: 1.5rem;
                   }
             }
+            margin-bottom: 2rem;
       }
 
       &__link {
-            width: 100%;
+            width: 90%;
+            margin: 0 auto;
             text-align: center;
             font-size: 2rem;
-      }
-
-      &__video {
-            &__video__source {
-            }
+            margin-bottom: 5rem;
+            border-bottom: 2px solid $SJSU--primary;
       }
 
       &__colors {
